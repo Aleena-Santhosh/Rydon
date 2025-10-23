@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RYDON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Reusing a dark background for aesthetic consistency */
+        body {
+            /* 🚀 START OF BACKGROUND IMAGE ADDITION 🚀 */
+            background-color: #0d131f; /* Fallback color */
+            background-image: url('contact_bg.jpg'); /* <-- REPLACE with your actual file name! */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background static when scrolling */
+            /* 🚀 END OF BACKGROUND IMAGE ADDITION 🚀 */
+            
+            color: black;
+            font-family: 'Inter', sans-serif;
+        }
+        .contact-box {
+            /* ⭐️ ADJUSTED: Increased opacity for a less transparent background (0.55) ⭐️ */
+            background: rgba(255, 255, 255, 0.55); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        /* Custom styling for detail rows to ensure consistent appearance */
+        .detail-group {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .detail-group:last-child {
+            border-bottom: none;
+        }
+        .name-phone-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-8">
+
+    <div class="contact-box w-full max-w-sm p-8 rounded-xl text-left">
+        <h1 class="text-3xl font-extrabold text-black text-center mb-8 pb-4 border-b border-black/30">
+            CONTACT US
+        </h1>
+        
+        <div class="space-y-4">
+            
+            <div class="detail-group flex flex-col items-start !justify-start">
+                <span class="font-semibold text-black/80 mb-2">Mobile:</span>
+                <div class="w-full pl-4 text-sm space-y-1">
+                    <div class="name-phone-row">
+                        <span class="text-black">Gangothri Ganesh:</span>
+                        <span class="text-black font-mono">+91 8301976648</span>
+                    </div>
+                </div>
+
+                <span class="font-semibold text-black/80 mb-2 mt-4">Whatsapp:</span>
+                <div class="w-full pl-4 text-sm space-y-1">
+                    <div class="name-phone-row">
+                        <span class="text-black">Aleena Santhosh:</span>
+                        <span class="text-black font-mono">+91 9048523198</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-group flex flex-col items-start !justify-start">
+                <span class="font-semibold text-black/80 mb-2">Mail:</span>
+                <a href="mailto:agnuschristopher2028@ct.sjcetpalai.ac.in" class="text-sm text-blue-900 hover:text-blue-950 transition duration-150 pl-4 break-all">
+                    agnuschristopher2028@ct.sjcetpalai.ac.in
+                </a>
+            </div>
+
+            <div class="detail-group flex flex-col items-start !justify-start">
+                <span class="font-semibold text-black/80 mb-2">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/athira-s-kumar" target="_blank" class="text-sm text-blue-900 hover:text-blue-950 transition duration-150 pl-4 break-all">
+                    Athira S. Kumar's Profile
+                </a>
+            </div>
+        </div>
+
+        <button 
+            onclick="window.history.back()"
+            class="mt-8 w-full px-6 py-2 bg-black/20 hover:bg-black/30 rounded-lg text-black font-semibold transition duration-200"
+        >
+            &larr; Go Back
+        </button>
+    </div>
+
+</body>
+</html>

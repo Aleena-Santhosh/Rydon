@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RYDON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Reusing a dark background for aesthetic consistency */
+        body {
+            /* 🚀 START OF BACKGROUND IMAGE ADDITION 🚀 */
+            background-color: #0d131f; /* Fallback color */
+            background-image: url('about_bg.jpg'); /* <-- REPLACE with your actual file name! */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background static when scrolling */
+            /* 🚀 END OF BACKGROUND IMAGE ADDITION 🚀 */
+
+            color: black; /* Keeping text color hint as black */
+            font-family: 'Inter', sans-serif;
+        }
+        .about-box {
+            /* Increased background opacity for better black text contrast (was 0.15) */
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-8">
+
+    <div class="about-box max-w-2xl p-10 rounded-xl text-center">
+        <h1 class="text-4xl font-extrabold text-black mb-6">
+            ABOUT US
+        </h1>
+        
+        <p class="text-lg text-black/90 leading-relaxed font-bold">
+            We are a dedicated vehicle rental service focused on delivering reliable and convenient mobility solutions to our customers. Our platform provides a wide selection of well-maintained cars and bikes, available at affordable and transparent rates. We strive to make the rental process simple, secure, and efficient, ensuring every customer enjoys a smooth experience from booking to return. At the core of our service is a commitment to quality, safety, and customer satisfaction. Whether for personal travel, business needs, or short-term use, we aim to make every journey comfortable and dependable. Our team continually works to enhance our services, offering flexible rental options and maintaining high standards of vehicle care and customer support.
+        </p>
+
+        <button 
+            onclick="window.history.back()"
+            class="mt-8 px-6 py-2 bg-black/40 hover:bg-black/50 rounded-lg text-white font-semibold transition duration-200"
+        >
+            &larr; Go Back
+        </button>
+    </div>
+
+</body>
+</html>
